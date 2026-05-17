@@ -1,12 +1,18 @@
-2026-05-17 13:30:35,554 | INFO | worker | Running job 2c447c1e-f975-4e04-b2c5-173bc008e156 for quote_20260517_132956.jpg (poster=meta)
-2026-05-17 13:30:35,564 | INFO | src.git_helpers | Git repository already exists at /Users/abhishekbanthia/projects/zenith-quotes
-To github.com:abhi8551/zenith.git
-   08e85ed..0fbe0c1  main -> main
-2026-05-17 13:30:38,623 | INFO | worker | Waiting 1s for GitHub Pages propagation...
-2026-05-17 13:30:39,630 | INFO | src.post_meta | Copied image to GitHub Pages hosting directory: docs/quote_20260517_132956.jpg
-2026-05-17 13:30:40,981 | INFO | src.post_meta | Publishing image via Meta Graph API: https://abhi8551.github.io/zenith/output/staged/motivation_success/quote_20260517_132956.jpg
-2026-05-17 13:31:20,769 | INFO | src.post_meta | Meta image published successfully. creation_id=17937701217234601
-2026-05-17 13:31:20,772 | INFO | worker | Moved published image to: /Users/abhishekbanthia/projects/zenith-quotes/output/published/motivation_success/quote_20260517_132956.jpg
-2026-05-17 13:31:20,811 | INFO | src.git_helpers | Git repository already exists at /Users/abhishekbanthia/projects/zenith-quotes
-To github.com:abhi8551/zenith.git
-   0fbe0c1..1957fb9  main -> main
+2026-05-17 18:08:01,611 | INFO | worker | Running job 4b2e3d31-3f3a-4cf7-bf3e-2e7e51c14b04 for quote_20260517_180730.jpg (poster=meta)
+2026-05-17 18:08:01,620 | INFO | src.git_helpers | Git repository already exists at /Users/abhishekbanthia/projects/zenith-quotes
+2026-05-17 18:08:01,649 | ERROR | worker | Job 4b2e3d31-3f3a-4cf7-bf3e-2e7e51c14b04 failed: Command '('git', 'add', '-f', '--', 'output', 'quotes/quotes.txt', 'quotes/published_quotes.txt')' returned non-zero exit status 128.
+Traceback (most recent call last):
+  File "/Users/abhishekbanthia/projects/zenith-quotes/src/main.py", line 711, in _run_worker
+    _commit_and_push_output(
+  File "/Users/abhishekbanthia/projects/zenith-quotes/src/main.py", line 347, in _commit_and_push_output
+    _commit_output_folder(
+  File "/Users/abhishekbanthia/projects/zenith-quotes/src/main.py", line 327, in _commit_output_folder
+    add_paths(root, paths_to_add, force=True)
+  File "/Users/abhishekbanthia/projects/zenith-quotes/src/git_helpers.py", line 84, in add_paths
+    _run_git(root, *args)
+  File "/Users/abhishekbanthia/projects/zenith-quotes/src/git_helpers.py", line 12, in _run_git
+    return subprocess.run(
+           ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '('git', 'add', '-f', '--', 'output', 'quotes/quotes.txt', 'quotes/published_quotes.txt')' returned non-zero exit status 128.
