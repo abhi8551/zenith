@@ -1,18 +1,2 @@
-2026-05-17 18:08:01,611 | INFO | worker | Running job 4b2e3d31-3f3a-4cf7-bf3e-2e7e51c14b04 for quote_20260517_180730.jpg (poster=meta)
-2026-05-17 18:08:01,620 | INFO | src.git_helpers | Git repository already exists at /Users/abhishekbanthia/projects/zenith-quotes
-2026-05-17 18:08:01,649 | ERROR | worker | Job 4b2e3d31-3f3a-4cf7-bf3e-2e7e51c14b04 failed: Command '('git', 'add', '-f', '--', 'output', 'quotes/quotes.txt', 'quotes/published_quotes.txt')' returned non-zero exit status 128.
-Traceback (most recent call last):
-  File "/Users/abhishekbanthia/projects/zenith-quotes/src/main.py", line 711, in _run_worker
-    _commit_and_push_output(
-  File "/Users/abhishekbanthia/projects/zenith-quotes/src/main.py", line 347, in _commit_and_push_output
-    _commit_output_folder(
-  File "/Users/abhishekbanthia/projects/zenith-quotes/src/main.py", line 327, in _commit_output_folder
-    add_paths(root, paths_to_add, force=True)
-  File "/Users/abhishekbanthia/projects/zenith-quotes/src/git_helpers.py", line 84, in add_paths
-    _run_git(root, *args)
-  File "/Users/abhishekbanthia/projects/zenith-quotes/src/git_helpers.py", line 12, in _run_git
-    return subprocess.run(
-           ^^^^^^^^^^^^^^^
-  File "/opt/homebrew/Cellar/python@3.11/3.11.15_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 571, in run
-    raise CalledProcessError(retcode, process.args,
-subprocess.CalledProcessError: Command '('git', 'add', '-f', '--', 'output', 'quotes/quotes.txt', 'quotes/published_quotes.txt')' returned non-zero exit status 128.
+2026-05-17 18:12:07,268 | INFO | worker | Running job 0f95004e-94bd-485b-a107-bfd1336d6aa8 for quote_20260517_181117.jpg (poster=meta)
+2026-05-17 18:12:07,287 | INFO | src.git_helpers | Git repository already exists at /Users/abhishekbanthia/projects/zenith-quotes
