@@ -1,5 +1,4 @@
 # Legacy quotes file (optional).
-#
 # If you prefer categorized quotes, use files under `quotes/categories/`.
 # This file is still supported for backward compatibility.
 #
