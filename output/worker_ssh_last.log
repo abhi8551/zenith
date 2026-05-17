@@ -1,2 +1,23 @@
 2026-05-17 13:14:03,028 | INFO | worker | Running job c1c0c3cc-477d-472e-b0dd-0be9b79bc366 for quote_20260517_131316.jpg (poster=meta)
 2026-05-17 13:14:03,042 | INFO | src.git_helpers | Git repository already exists at /Users/abhishekbanthia/projects/zenith-quotes
+To github.com:abhi8551/zenith.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'github.com:abhi8551/zenith.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-05-17 13:14:05,911 | ERROR | worker | Job c1c0c3cc-477d-472e-b0dd-0be9b79bc366 failed: Command '('git', 'push', 'origin', 'main')' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/Users/abhishekbanthia/projects/zenith-quotes/src/main.py", line 711, in _run_worker
+    _commit_and_push_output(
+  File "/Users/abhishekbanthia/projects/zenith-quotes/src/main.py", line 356, in _commit_and_push_output
+    push_branch(root, branch=branch, remote_name=remote_name)
+  File "/Users/abhishekbanthia/projects/zenith-quotes/src/git_helpers.py", line 114, in push_branch
+    _run_git(root, "push", remote_name, branch, capture_output=False)
+  File "/Users/abhishekbanthia/projects/zenith-quotes/src/git_helpers.py", line 12, in _run_git
+    return subprocess.run(
+           ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '('git', 'push', 'origin', 'main')' returned non-zero exit status 1.
