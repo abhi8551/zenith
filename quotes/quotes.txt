@@ -1,0 +1,12 @@
+# Legacy quotes file (optional).
+#
+# If you prefer categorized quotes, use files under `quotes/categories/`.
+# This file is still supported for backward compatibility.
+#
+# Add one quote per line. Empty lines are ignored.
+Be the change you wish to see in the world.
+Dream big. Start small. Act now.
+Discipline is choosing what you want most over what you want now.
+Small steps every day add up to big results.
+Your future is created by what you do today, not tomorrow.
+
