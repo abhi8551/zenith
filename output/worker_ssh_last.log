@@ -1,2 +1,10 @@
 2026-05-17 13:28:23,823 | INFO | worker | Running job ad25460f-9602-40d8-a0be-ec1a01d8b515 for quote_20260517_132608.jpg (poster=meta)
 2026-05-17 13:28:23,841 | INFO | src.git_helpers | Git repository already exists at /Users/abhishekbanthia/projects/zenith-quotes
+To github.com:abhi8551/zenith.git
+   36ed766..3dedd6c  main -> main
+2026-05-17 13:28:27,461 | INFO | worker | Waiting 1s for GitHub Pages propagation...
+2026-05-17 13:28:28,468 | INFO | src.post_meta | Copied image to GitHub Pages hosting directory: docs/quote_20260517_132608.jpg
+2026-05-17 13:28:29,719 | INFO | src.post_meta | Publishing image via Meta Graph API: https://abhi8551.github.io/zenith/output/staged/motivation_success/quote_20260517_132608.jpg
+2026-05-17 13:28:37,812 | INFO | src.post_meta | Meta image published successfully. creation_id=17937700773234601
+2026-05-17 13:28:37,815 | INFO | worker | Moved published image to: /Users/abhishekbanthia/projects/zenith-quotes/output/published/motivation_success/quote_20260517_132608.jpg
+2026-05-17 13:28:37,840 | INFO | src.git_helpers | Git repository already exists at /Users/abhishekbanthia/projects/zenith-quotes
