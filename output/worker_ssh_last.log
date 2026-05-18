@@ -1,2 +1,1 @@
-2026-05-18 11:02:08,516 | INFO | worker | Running job 5c296126-fe31-4946-9617-3dc54d9d86fd for quote_20260518_110031.jpg (poster=meta)
-2026-05-18 11:02:08,524 | INFO | src.git_helpers | Git repository already exists at /Users/abhishekbanthia/projects/zenith-quotes
+2026-05-18 12:02:26,209 | INFO | worker | No jobs in queue.
